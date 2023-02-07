@@ -1,0 +1,33 @@
+[sashasuhel@localhost CW1]$ tr 'kmn' 'THE' <ciphertxt-197> new.txt
+[sashasuhel@localhost CW1]$ tr 'kmngwq' 'THEAND' <ciphertxt-197> new.txt
+[sashasuhel@localhost CW1]$ tr 'kmmnnyynwqr' 'THHEINERANE' <ciphertxt-197> new.txt
+[sashasuhel@localhost CW1]$ tr 'kmngwqe' 'THEANDO' <ciphertxt-197> new.txt
+[sashasuhel@localhost CW1]$ tr 'kmngwq' 'THEAND' <ciphertxt-197> new.txt
+[sashasuhel@localhost CW1]$ tr 'kmn' 'THE' <ciphertxt-197> new.txt
+[sashasuhel@localhost CW1]$ tr 'kmnv' 'THEN' <ciphertxt-197> new.txt
+[sashasuhel@localhost CW1]$ tr 'kmnvwe' 'THENAO' <ciphertxt-197> new.txt
+[sashasuhel@localhost CW1]$ tr 'kmnvew' 'THENAO' <ciphertxt-197> new.txt
+[sashasuhel@localhost CW1]$ tr 'kmnvewp' 'THENAOI' <ciphertxt-197> new.txt
+[sashasuhel@localhost CW1]$ tr 'kmnvewpxyl' 'THENAOIWRK' <ciphertxt-197> new.txt[sashasuhel@localhost CW1]$ tr 'kmnvewpxyls' 'THENAOIWRKD' <ciphertxt-197> new.txt
+[sashasuhel@localhost CW1]$ tr 'kmnvewpxylszg' 'THENAOIWRKDGY' <ciphertxt-197> new.txt
+[sashasuhel@localhost CW1]$ tr 'kmnvewpxylszgs' 'THENAOIWRKDGYA' <ciphertxt-197> new.txt
+[sashasuhel@localhost CW1]$ tr 'kmnvewpxylszgsfa' 'THENAOIWRKDGYACS' <ciphertxt-197> new.txt
+[sashasuhel@localhost CW1]$ tr 'kmnvewpxylszgsfa' 'THENAOIWRKDGYACS' <ciphertxt-197> new.txt
+[sashasuhel@localhost CW1]$ tr 'kmnvewpxylszgsfaqd' 'THENAOIWRKDGYACSUM' <ciphertxt-197> new.txt
+[sashasuhel@localhost CW1]$ tr 'kmnvewpxylszgsfaqdrho' 'THENAOIWRKDGYACSUMLBF' <ciphertxt-197> new.txt
+[sashasuhel@localhost CW1]$ tr 'kmnvewpxylszgs' 'THENAOIWRKDGYA' <ciphertxt-197> new.txt
+[sashasuhel@localhost CW1]$ tr 'kmnvewpxylszg' 'THENAOIWRKDGY' <ciphertxt-197> new.txt
+[sashasuhel@localhost CW1]$ tr 'kmnvewpxylszgqdfa' 'THENAOIWRKDGYUMCS' <ciphertxt-197> new.txt
+[sashasuhel@localhost CW1]$ tr 'kmnvewpxylszgqdfauro' 'THENAOIWRKDGYUMCSPLF' <ciphertxt-197> new.txt
+[sashasuhel@localhost CW1]$ tr 'kmnvewpxylszgqdfauroh' 'THENAOIWRKDGYUMCSPLFB' <ciphertxt-197> new.txt
+[sashasuhel@localhost CW1]$ 
+[sashasuhel@localhost CW1]$ tr 'kmnvewpxylszgqdfaurohi' 'THENAOIWRKDGYUMCSPLFBV' <ciphertxt-197> new.txt
+[sashasuhel@localhost CW1]$ tr 'kmnvewpxylszgqdfaurohic' 'THENAOIWRKDGYUMCSPLFBVX' <ciphertxt-197> new.txt
+[sashasuhel@localhost CW1]$ tr 'kmnvewpxylszgqdfaurohict' 'THENAOIWRKDGYUMCSPLFBVXZ' <ciphertxt-197> new.txt
+[sashasuhel@localhost CW1]$ tr 'kmnvewpxylszgqdfaurohictb' 'THENAOIWRKDGYUMCSPLFBVXZQ' <ciphertxt-197> new.txt
+[sashasuhel@localhost CW1]$ tr 'kmnvewpxylszgqdfaurohictbm' 'THENAOIWRKDGYUMCSPLFBVXZQH' <ciphertxt-197> new.txt
+[sashasuhel@localhost CW1]$ tr 'kmnvewpxylszgqdfaurohict' 'THENAOIWRKDGYUMCSPLFBVXZ' <ciphertxt-197> new.txt
+[sashasuhel@localhost CW1]$ tr 'kmnvewpxylszgqdfaurohictb' 'THENAOIWRKDGYUMCSPLFBVXZQ' <ciphertxt-197> new.txt
+[sashasuhel@localhost CW1]$ tr 'kmnvewpxylszgqdfaurohictbj' 'THENAOIWRKDGYUMCSPLFBVXZQJ' <ciphertxt-197> new.txt
+[sashasuhel@localhost CW1]$ exit
+

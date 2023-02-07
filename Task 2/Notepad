@@ -1,0 +1,91 @@
+[sashasuhel@localhost Task2]$ nano plain1.txt
+[sashasuhel@localhost Task2]$ nano plain2.txt
+[sashasuhel@localhost Task2]$ ls -l
+total 8
+-rw-rw-r--. 1 sashasuhel sashasuhel  5 Oct  2 16:55 plain1.txt
+-rw-rw-r--. 1 sashasuhel sashasuhel 10 Oct  2 16:58 plain2.txt
+[sashasuhel@localhost Task2]$ nano plain3.txt
+[sashasuhel@localhost Task2]$ ls -l
+total 12
+-rw-rw-r--. 1 sashasuhel sashasuhel  5 Oct  2 16:55 plain1.txt
+-rw-rw-r--. 1 sashasuhel sashasuhel 10 Oct  2 16:58 plain2.txt
+-rw-rw-r--. 1 sashasuhel sashasuhel 15 Oct  2 16:59 plain3.txt
+[sashasuhel@localhost Task2]$ nano plain3.txt
+[sashasuhel@localhost Task2]$ ls -l
+total 12
+-rw-rw-r--. 1 sashasuhel sashasuhel  5 Oct  2 16:55 plain1.txt
+-rw-rw-r--. 1 sashasuhel sashasuhel 10 Oct  2 16:58 plain2.txt
+-rw-rw-r--. 1 sashasuhel sashasuhel 16 Oct  2 16:59 plain3.txt
+[sashasuhel@localhost Task2]$ cat plain1.txt plain2.txt plain3.txt
+meow
+treasures
+mathematics1234
+[sashasuhel@localhost Task2]$ openssl enc -aes-128-cbc -e -in plain1.txt -out cipher1.bin \ 
+enc: Use -help for summary.
+[sashasuhel@localhost Task2]$ openssl enc -aes-128-cbc -e -in plain1.txt -out cipher1.bin\
+> -K 001122334455667788899aabbccddeeff -iv 0102030405060708
+enc: Use -help for summary.
+[sashasuhel@localhost Task2]$ openssl enc -aes-128-cbc -e -in plain1.txt -out cipher1.bin-K 001122334455667788899aabbccddeeff -iv 0102030405060708
+enc: Use -help for summary.
+[sashasuhel@localhost Task2]$ openssl enc -aes-128-cbc -e -in plain1.txt -out cipher1.bin -K 001122334455667788899aabbccddeeff -iv 0102030405060708
+hex string is too short, padding with zero bytes to length
+hex string is too long, ignoring excess
+[sashasuhel@localhost Task2]$ openssl enc -aes-128-cbc -e -in plain2.txt -out cipher2.bin -K 001122334455667788899aabbccddeeff -iv 0102030405060708
+hex string is too short, padding with zero bytes to length
+hex string is too long, ignoring excess
+[sashasuhel@localhost Task2]$ openssl enc -aes-128-cbc -e -in plain3.txt -out cipher3.bin -K 001122334455667788899aabbccddeeff -iv 0102030405060708
+hex string is too short, padding with zero bytes to length
+hex string is too long, ignoring excess
+[sashasuhel@localhost Task2]$ ls -l
+total 100
+-rw-rw-r--. 1 sashasuhel sashasuhel    16 Oct  2 17:12  cipher1.bin
+-rw-rw-r--. 1 sashasuhel sashasuhel    16 Oct  2 17:15  cipher2.bin
+-rw-rw-r--. 1 sashasuhel sashasuhel    32 Oct  2 17:15  cipher3.bin
+-rw-rw-r--. 1 sashasuhel sashasuhel     5 Oct  2 16:55  plain1.txt
+-rw-rw-r--. 1 sashasuhel sashasuhel    10 Oct  2 16:58  plain2.txt
+-rw-rw-r--. 1 sashasuhel sashasuhel    16 Oct  2 16:59  plain3.txt
+-rw-r--r--. 1 sashasuhel sashasuhel 77528 Oct  2 17:08 'Screenshot from 2022-10-02 17-08-24.png'
+[sashasuhel@localhost Task2]$ openssl enc -aes-128-cbc -d -in cipher1.bin -out newpln1.txt -nopad -K 001122334455667788899aabbccddeeff -iv 0102030405060708
+hex string is too short, padding with zero bytes to length
+hex string is too long, ignoring excess
+[sashasuhel@localhost Task2]$ openssl enc -aes-128-cbc -d -in cipher2.bin -out newpln2.txt -nopad -K 001122334455667788899aabbccddeeff -iv 0102030405060708
+hex string is too short, padding with zero bytes to length
+hex string is too long, ignoring excess
+[sashasuhel@localhost Task2]$ openssl enc -aes-128-cbc -d -in cipher3.bin -out newpln3.txt -nopad -K 001122334455667788899aabbccddeeff -iv 0102030405060708
+hex string is too short, padding with zero bytes to length
+hex string is too long, ignoring excess
+[sashasuhel@localhost Task2]$ ls -l
+total 224
+-rw-rw-r--. 1 sashasuhel sashasuhel     16 Oct  2 17:12  cipher1.bin
+-rw-rw-r--. 1 sashasuhel sashasuhel     16 Oct  2 17:15  cipher2.bin
+-rw-rw-r--. 1 sashasuhel sashasuhel     32 Oct  2 17:15  cipher3.bin
+-rw-rw-r--. 1 sashasuhel sashasuhel     16 Oct  2 17:20  newpln1.txt
+-rw-rw-r--. 1 sashasuhel sashasuhel     16 Oct  2 17:20  newpln2.txt
+-rw-rw-r--. 1 sashasuhel sashasuhel     32 Oct  2 17:20  newpln3.txt
+-rw-rw-r--. 1 sashasuhel sashasuhel      5 Oct  2 16:55  plain1.txt
+-rw-rw-r--. 1 sashasuhel sashasuhel     10 Oct  2 16:58  plain2.txt
+-rw-rw-r--. 1 sashasuhel sashasuhel     16 Oct  2 16:59  plain3.txt
+-rw-r--r--. 1 sashasuhel sashasuhel  77528 Oct  2 17:08 'Screenshot from 2022-10-02 17-08-24.png'
+-rw-r--r--. 1 sashasuhel sashasuhel 111828 Oct  2 17:18 'Screenshot from 2022-10-02 17-18-11.png'
+[sashasuhel@localhost Task2]$ xxd plain1.txt
+00000000: 6d65 6f77 0a                             meow.
+[sashasuhel@localhost Task2]$ xxd cipher1.bin
+00000000: 7b3c 42af cee9 52b5 d081 abab 2529 eb45  {<B...R.....%).E
+[sashasuhel@localhost Task2]$ xxd newpln1.txt
+00000000: 6d65 6f77 0a0b 0b0b 0b0b 0b0b 0b0b 0b0b  meow............
+[sashasuhel@localhost Task2]$ xxd plain2.txt
+00000000: 7472 6561 7375 7265 730a                 treasures.
+[sashasuhel@localhost Task2]$ xxd cipher2.bin
+00000000: 3377 8f3f 1481 878e e32a 3d97 dc52 0c83  3w.?.....*=..R..
+[sashasuhel@localhost Task2]$ xxd newpln2.txt
+00000000: 7472 6561 7375 7265 730a 0606 0606 0606  treasures.......
+[sashasuhel@localhost Task2]$ xxd plain3.txt
+00000000: 6d61 7468 656d 6174 6963 7331 3233 340a  mathematics1234.
+[sashasuhel@localhost Task2]$ xxd cipher3.bin
+00000000: 3eca 9dcd 4534 c1e3 02db 1a00 0e41 71d0  >...E4.......Aq.
+00000010: f424 2416 a2af 0e50 efc9 1adc 379f 2ac2  .$$....P....7.*.
+[sashasuhel@localhost Task2]$ xxd newpln3.txt
+00000000: 6d61 7468 656d 6174 6963 7331 3233 340a  mathematics1234.
+00000010: 1010 1010 1010 1010 1010 1010 1010 1010  ................
+[sashasuhel@localhost Task2]$ 
+
