@@ -1,6 +1,0 @@
-treasure
-sea
-gold
-maps
-boat
-sword
